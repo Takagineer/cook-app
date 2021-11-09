@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       </Head>
       <h1>テスト</h1>
       <h3>ひとまずデプロイ</h3>
+      <Link href="./UserPage">
+        <a>マイページへ</a>
+      </Link>
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
